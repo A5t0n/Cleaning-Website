@@ -3,7 +3,9 @@ import './Footer.css'
 
 function Footer() {
   return (
-    <div>This is the footer</div>
+    <div className='footer'>
+      <p>© 2025 CleanCo. All rights reserved.</p>
+    </div>
   )
 }
 

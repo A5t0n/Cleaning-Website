@@ -1,0 +1,43 @@
+.body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 2rem;
+    background-color: #f4fdf6;
+    /* flex-wrap: wrap; */
+  }
+  
+  .body-text {
+    max-width: 50%;
+  }
+  
+  .body-text h1 {
+    font-size: 2.5rem;
+    color: #3baa6c;
+  }
+  
+  .body-text p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .body-text button {
+    background-color: #3baa6c;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .body-image img {
+    width: 100%; /* Make the image span the full width of the screen */
+    height: 50%; /* Maintain the image's aspect ratio */
+    max-height: 600px; /* You can adjust this value to control the banner's height */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
+    border-radius: 10px; /* Optional: adds rounded corners to the image */
+}
+
+  
