@@ -53,5 +53,13 @@
   }
   
   .navbar ul li a:hover {
-    color: black;
+    color: rgb(55, 55, 244);
+  }
+
+  .navbar ul li {
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .navbar ul li:hover {
+    transform: scale(1.1);
   }

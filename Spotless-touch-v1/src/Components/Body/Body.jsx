@@ -10,9 +10,12 @@ function Body() {
       </div>
     <div className='body'>
       <div className="body-text">
-        <h1>Spotless Cleaning at Your Service</h1>
-        <p>Your home and office deserve a shine!</p>
-        <button>Book Now</button>
+       {/*About Section*/}
+        <h1>About Us</h1>
+       {/*Services Section*/}
+        <h1>Services</h1>
+       {/*Contact Section*/}
+        <h1>Contact Us</h1>
       </div>
     </div>
     </>

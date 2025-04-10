@@ -1,8 +1,20 @@
 .footer {
-    background-color: #3baa6c;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    font-size: 0.9rem;
-  }
-  
+  background-color: #139A43; /* green primary tone */
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  box-shadow:
+      0 4px 6px rgba(0, 0, 0, 0.1),     /* soft shadow */
+      0 6px 20px rgba(0, 0, 0, 0.1);    /* deep shadow */
+    border-bottom: 1px solid #ddd;      /* subtle edge */
+    transform-style: preserve-3d;
+  margin-top: 3rem;
+  border-top: 1px solid #0e6f32;
+}
+
+.footer p {
+  margin: 0;
+}
