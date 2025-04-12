@@ -1,6 +1,16 @@
 import React from 'react'
 import './Body.css'
 import Banner from '../../assets/banner.png'
+import MapsHomeWorkOutlinedIcon from '@mui/icons-material/MapsHomeWorkOutlined';
+import BusinessCenterOutlinedIcon from '@mui/icons-material/BusinessCenterOutlined';
+import ApartmentOutlinedIcon from '@mui/icons-material/ApartmentOutlined';
+import WorkOutlineOutlinedIcon from '@mui/icons-material/WorkOutlineOutlined';
+import EventOutlinedIcon from '@mui/icons-material/EventOutlined';
+import CleaningServicesOutlinedIcon from '@mui/icons-material/CleaningServicesOutlined';
+import KitchenOutlinedIcon from '@mui/icons-material/KitchenOutlined';
+import BathtubOutlinedIcon from '@mui/icons-material/BathtubOutlined';
+
+
 
 function Body() {
   return (
@@ -35,14 +45,47 @@ function Body() {
 
         <section id="services" className="services-section">
             <div className="services-grid">
-              <div className="service-card">Residential Cleaning</div>
-              <div className="service-card">Commercial Cleaning</div>
-              <div className="service-card">Apartment Cleaning</div>
-              <div className="service-card">Office Cleaning</div>
-              <div className="service-card">Event Cleaning</div>
-              <div className="service-card">Floor Cleaning</div>
-              <div className="service-card">Kitchen Cleaning</div>
-              <div className="service-card">Bathroom Cleaning</div>
+
+              <div className="service-card">
+                <MapsHomeWorkOutlinedIcon/>
+                <p>Residential Cleaning</p>
+              </div>
+
+              <div className="service-card">
+                <BusinessCenterOutlinedIcon/>
+                <p>Commercial Cleaning</p>
+              </div>
+
+              <div className="service-card">
+                <ApartmentOutlinedIcon/>
+                <p>Apartment Cleaning</p>
+              </div>
+              
+              <div className="service-card">
+                <WorkOutlineOutlinedIcon/>
+                <p>Office Cleaning</p>
+              </div>
+
+              <div className="service-card">
+                <EventOutlinedIcon/>
+                <p>Event Cleaning</p>
+              </div>
+
+              <div className="service-card">
+                <CleaningServicesOutlinedIcon/>
+                <p>Floor Cleaning</p>
+              </div>
+
+              <div className="service-card">
+                <KitchenOutlinedIcon/>
+                <p>Kitchen Cleaning</p>
+              </div>
+
+              <div className="service-card">
+                <BathtubOutlinedIcon/>
+                <p>Bathroom Cleaning</p>
+              </div>
+
             </div>
         </section>
        {/*Contact Section*/}
