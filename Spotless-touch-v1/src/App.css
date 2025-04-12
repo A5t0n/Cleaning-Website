@@ -1,0 +1,21 @@
+/* Reset and prevent overflow shift */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  @font-face {
+    font-family: 'Helvetica Neue';
+    src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
+  }
+  
+  p{
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+  }

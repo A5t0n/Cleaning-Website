@@ -1,43 +1,130 @@
 .body {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4rem 2rem;
-    background-color: #f4fdf6;
-    /* flex-wrap: wrap; */
-  }
-  
-  .body-text {
-    max-width: 50%;
-  }
-  
-  .body-text h1 {
-    font-size: 2.5rem;
-    color: #3baa6c;
-  }
-  
-  .body-text p {
-    margin: 1rem 0;
-    font-size: 1.2rem;
-    color: #555;
-  }
-  
-  .body-text button {
-    background-color: #3baa6c;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .body-image img {
-    width: 100%; /* Make the image span the full width of the screen */
-    height: 50%; /* Maintain the image's aspect ratio */
-    max-height: 600px; /* You can adjust this value to control the banner's height */
-    object-fit: cover; /* Ensures the image covers the area without stretching */
-    border-radius: 10px; /* Optional: adds rounded corners to the image */
+  display: flex;
+  flex-direction: column; /* Stack vertically */
+  align-items: center;
+  padding: 4rem 2rem;
+  background-color: #f4fdf6;
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
-  
+.body-text {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.body-text h1 {
+  font-size: 2.5rem;
+  color: #3baa6c;
+}
+
+.body-text p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.body-text button {
+  background-color: #3baa6c;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Banner Image */
+.body-image img {
+  width: 100%;
+  height: 60vh;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 0 0 20px 20px;
+}
+
+/* About Section */
+.About-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #f9f9f9;
+  /* padding: 4rem 2rem; */
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+
+.about-section {
+  text-align: center;
+  max-width: 2500px;
+  background: white;
+  padding: 3rem 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.387);
+  border-radius: 12px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.body-text h2 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  color: #3BAA6C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-section p {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/*Services Section styles*/
+
+.services-section {
+  background-color: #f4fdf6;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2.5rem;
+  color: #3BAA6C;
+  margin-bottom: 2rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  color: #444;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
