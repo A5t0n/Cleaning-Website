@@ -1,23 +1,26 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
-    padding: 0 2rem 0 0.5rem;
-    background: linear-gradient(to bottom, #ffffff, #f0f0f0); /* subtle depth */
-    color: black;
-    font-family: sans-serif;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    overflow: hidden;
-  
-    box-shadow:
-      0 4px 6px rgba(0, 0, 0, 0.1),     /* soft shadow */
-      0 6px 20px rgba(0, 0, 0, 0.1);    /* deep shadow */
-    border-bottom: 1px solid #ddd;      /* subtle edge */
-    transform-style: preserve-3d;
-  }
+  position: fixed; /* stick to top while scrolling */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 0 2rem 0 0.5rem;
+  background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+  color: black;
+  font-family: sans-serif;
+  overflow: hidden;
+
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.1),
+    0 6px 20px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ddd;
+  transform-style: preserve-3d;
+}
+
   
   
   .logo-container {
