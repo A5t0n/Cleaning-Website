@@ -117,7 +117,7 @@ function Body() {
         <div className="google-calendar-link">
               <p>Prefer to schedule directly? Click below to book an appointment</p>
               <a                
-                href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Spotless+Touch+Cleaning+Appointment&details=Schedule+your+cleaning+with+Spotless+Touch+Inc.&location=&trp=false"
+                href="https://calendar.app.google/fUu7EV3QhDT1RJoSA"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="calendar-button"
