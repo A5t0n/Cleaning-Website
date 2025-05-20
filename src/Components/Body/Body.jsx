@@ -34,7 +34,7 @@ function Body() {
   return (
     <>
     <div id='home' className="body-image">
-        <img src={Banner} alt="Cleaning Team" />
+        <img loading="lazy" src={Banner} alt="Cleaning Team" />
       </div>
     <div className='body'>
       <div className="body-text">
