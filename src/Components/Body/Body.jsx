@@ -21,7 +21,7 @@ function Body() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_v5xz685', 'template_46n1qnw',refForm.current,'0YTFNcbHImPBvRdds')
+    emailjs.sendForm('service_4446zar', 'template_xoopeoi',refForm.current,'y-y4WyCZqXKIHsl-2')
       .then(() => {
           alert('Message sent successfully');
           window.location.reload(false);
