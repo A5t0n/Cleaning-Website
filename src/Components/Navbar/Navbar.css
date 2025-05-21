@@ -1,68 +1,137 @@
+/* NAVBAR CONTAINER */
 .navbar {
-  position: fixed; /* stick to top while scrolling */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100000;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 65px;
   padding: 0 2rem 0 0.5rem;
   background: linear-gradient(to bottom, #ffffff, #f0f0f0);
-  color: black;
-  font-family: sans-serif;
-  overflow: hidden;
-
   box-shadow:
     0 4px 6px rgba(0, 0, 0, 0.1),
     0 6px 20px rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid #ddd;
-  transform-style: preserve-3d;
+  font-family: sans-serif;
 }
 
-  
-  
-  .logo-container {
-    display: flex;
-    align-items: center;
-    margin: none;
-    padding: none;
-    height: 150%;
-  }
-  
-  .logo {
-    height: 150%;
-    margin: none;
-    max-height: 150%;
-    object-fit: contain;
-  }
-  
-  .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar ul li a {
-    color: #139A43;
-    text-decoration:solid;
-    font-weight: 600;
-    font-size: 20px;
-    transition: color 0.3s ease;
-    text-shadow: black;
-  }
-  
-  .navbar ul li a:hover {
-    color: rgb(55, 55, 244);
+/* LOGO */
+.logo-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  height: 100%;
+  object-fit: contain;
+}
+
+/* DESKTOP NAV (HIDDEN ON MOBILE) */
+.nav-links {
+  display: flex;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links ul li a {
+  color: #139A43;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+  color: rgb(55, 55, 244);
+}
+
+.nav-links ul li:hover {
+  transform: scale(1.1);
+}
+
+/* HAMBURGER - VISIBLE ONLY ON MOBILE */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+/* SIDE DRAWER NAV */
+.side-drawer {
+  position: fixed;
+  top: 0;
+  right: -250px; /* Initially hidden on the right */
+  height: 100%;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: -2px 0 12px rgba(0, 0, 0, 0.2); /* Left-facing shadow */
+  transition: right 0.3s ease;
+  z-index: 999;
+}
+
+.side-drawer.open {
+  right: 0; /* Slide in from right */
+}
+
+.side-drawer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  gap: 20px;
+}
+
+.side-drawer ul li a {
+  color: #139A43;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.side-drawer ul li a:hover {
+  color: rgb(55, 55, 244);
+}
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+
+  .navbar{
+    padding: 0%;
   }
 
-  .navbar ul li {
-    transition: transform 0.2s ease-in-out;
+  .logo{
+    height: 150%;
   }
-  
-  .navbar ul li:hover {
-    transform: scale(1.1);
+
+  .nav-links {
+    display: none;
   }
+
+  .hamburger {
+    display: block;
+    margin-right: 1rem;
+  }
+}
+
+.drawer-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem;
+  position: relative;
+}
+
+.close-icon {
+  position: absolute;
+  font-size: 30px;
+  color: #139A43;
+  cursor: pointer;
+}

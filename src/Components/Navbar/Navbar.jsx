@@ -6,18 +6,35 @@ import CloseIcon from '@mui/icons-material/Close';
 
 
 function Navbar() {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+
+  const closeMenu = () => setMenuOpen(false);
+
   return (
       <nav className="navbar">
       <div className="logo-container">
         <img className="logo" src={Logo} alt="Logo" />
       </div>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+
+      <div className={`side-drawer ${menuOpen ? 'open' : ''}`}>
+        <div className="drawer-header">
+          <CloseIcon className="close-icon" onClick={closeMenu} />
+        </div>
+        <ul>
+          <li><a href="#home" onClick={closeMenu}>Home</a></li>
+          <li><a href="#about" onClick={closeMenu}>About</a></li>
+          <li><a href="#services" onClick={closeMenu}>Services</a></li>
+          <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+        </ul>
+      </div>
       {/* <button className="cta-button">Get a Quote</button> */}
+
+      <div className="hamburger" onClick={toggleMenu}>
+        <MenuIcon style={{ fontSize: 30, color: '#139A43' }} />
+      </div>
     </nav>
   )
 }
