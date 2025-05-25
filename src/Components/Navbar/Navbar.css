@@ -22,7 +22,7 @@
 .logo-container {
   display: flex;
   align-items: center;
-  height: 100%;
+  height: 180%;
 }
 
 .logo {
@@ -109,7 +109,7 @@
   }
 
   .logo{
-    height: 150%;
+    height: 100%;
   }
 
   .nav-links {

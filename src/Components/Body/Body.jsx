@@ -36,10 +36,10 @@ function Body() {
     <div id='home' className="body-image">
         <img loading="lazy" src={Banner} alt="Cleaning Team" />
       </div>
-    <div className='body'>
-      <div className="body-text">
+    <div className='body' id='about'>
+      <div className="body-text" >
        {/*About Section*/}
-       <h2 id='about'>About Us</h2>
+       <h2 >About Us</h2>
        <div className="About-page-container">
           <section id="about" className="about-section">
             <div className="about-content">
@@ -55,11 +55,12 @@ function Body() {
               </p>
             </div>
           </section>
+          <div id='services'></div>
         </div>
 
 
        {/*Services Section*/}
-        <h2 id='services'>Our Services</h2>
+        <h2>Our Services</h2>
 
         <section className="services-section">
             <div className="services-grid">
@@ -101,13 +102,13 @@ function Body() {
 
               <div className="service-card">
                 <BathtubOutlinedIcon/>
-                <p>Bathroom Cleaning</p>
+                <p id='contact'>Bathroom Cleaning</p>
               </div>
 
             </div>
         </section>
        {/*Contact Section*/}
-        <h2 id='contact'>Contact Us</h2>
+        <h2 >Contact Us</h2>
         <div className="contact-page">
         <div className="text-zone">
         <p>
