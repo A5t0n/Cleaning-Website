@@ -6,16 +6,22 @@
   }
   
   html, body {
+    height: 100%;
     width: 100%;
     overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
-    background-image: url('./');
+    background-image: url('./assets/8e0131c5-821f-40f6-8b84-954c10755e3e.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
   }
+
+
 
   @font-face {
     font-family: 'Helvetica Neue';

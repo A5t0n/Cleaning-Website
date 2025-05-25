@@ -109,7 +109,8 @@ function Body() {
         </section>
        {/*Contact Section*/}
         <h2 >Contact Us</h2>
-        <div className="contact-page">
+        <div className="contact-page-container">
+          <div className="contact-page">
         <div className="text-zone">
         <p>
           Have a cleaning project in mind? Spotless Touch Inc is ready to make your home or office sparkle. Whether you need a one‑time deep clean, ongoing maintenance, or a specialized service, our professional team delivers outstanding results every time.
@@ -153,9 +154,7 @@ function Body() {
                     </ul>
                 </form>
             </div>
-
-            
-
+        </div>
         </div>
       </div>
       </div>
