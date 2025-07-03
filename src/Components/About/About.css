@@ -39,6 +39,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+    transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+  transition: all 0.3s ease-in-out;
 }
 
 
