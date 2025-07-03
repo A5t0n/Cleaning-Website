@@ -1,6 +1,7 @@
 /* About Section */
 .About-page-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -29,6 +30,17 @@
   background-color: #3baa6c;
   cursor: pointer;
 }
+
+.about-heading {
+  padding-top: 32px;
+  font-size: 4rem;
+  margin-bottom: 2.5rem; 
+  color: #92f4a1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 .about-section p {
   font-size: 1.125rem; /* 18px */
