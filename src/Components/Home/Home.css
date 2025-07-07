@@ -8,7 +8,7 @@
 
 .body-image img {
   width: 100%;
-  height: auto; /* Prevents cropping */
+  height: 100%; /* Prevents cropping */
   object-fit: contain; /* Prevents cutting off content */
   display: block;
   max-width: 100%;
