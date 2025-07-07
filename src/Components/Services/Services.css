@@ -1,0 +1,92 @@
+/*Services Section styles*/
+
+/* Services Section */
+.services-section {
+  /* background-color: #f4fdf6; */
+  padding: 4rem 2rem;
+  text-align: center;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.services-section h2 {
+  padding-top: 32px;
+  font-size: 4rem;
+  color: #92f4a1;
+  margin-bottom: 2rem;
+}
+
+/* Grid Layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Individual Card */
+.service-card {
+  background-color: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.454);
+  
+  /* Center contents */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  /* Hover effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.822);
+  cursor: pointer;
+  transform-style: preserve-3d;
+  background-color: #3baa6c;
+  
+}
+
+.service-card:hover svg {
+  color: #fff; 
+}
+
+.service-card:hover p {
+  color: #fff; 
+}
+
+/* Icon Styling */
+.service-card svg {
+  font-size: 3rem;       
+  color: #3BAA6C;        
+  margin-bottom: 1rem;
+}
+
+/* Text Styling */
+.service-card {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  line-height: 1.4;
+}
+.service-card p{
+  font-size: 20px;
+  font-weight: 600;
+}

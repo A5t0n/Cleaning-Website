@@ -1,0 +1,15 @@
+.body-image {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-image img {
+  width: 100%;
+  height: auto; /* Prevents cropping */
+  object-fit: contain; /* Prevents cutting off content */
+  display: block;
+  max-width: 100%;
+}

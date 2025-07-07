@@ -3,6 +3,8 @@ import './Navbar.css'
 import Logo from '../../assets/logo.png'
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import { Link } from 'react-router-dom';
+
 
 
 function Navbar() {
@@ -21,10 +23,10 @@ function Navbar() {
 
       <div className="nav-links">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/services">Services</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
       </div>
 
@@ -33,10 +35,10 @@ function Navbar() {
           <CloseIcon className="close-icon" onClick={closeMenu} />
         </div>
         <ul>
-          <li><a href="#home" onClick={closeMenu}>Home</a></li>
-          <li><a href="#about" onClick={closeMenu}>About</a></li>
-          <li><a href="#services" onClick={closeMenu}>Services</a></li>
-          <li><a href="#contact" onClick={closeMenu}>Contact</a></li>
+          <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+          <li><Link to="/about" onClick={closeMenu}>About</Link></li>
+          <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
+          <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
         </ul>
       </div>
       {/* <button className="cta-button">Get a Quote</button> */}
