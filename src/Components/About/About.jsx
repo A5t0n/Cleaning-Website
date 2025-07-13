@@ -1,5 +1,6 @@
 import './About.css';
 import { useEffect } from 'react';
+import ReviewList from '../ReviewList/ReviewList';
 
 function About () {
 
@@ -26,6 +27,10 @@ function About () {
                         </p>
                     </div>
                 </section>
+            </div>
+
+            <div className="review-section">
+                <ReviewList />
             </div>
         </>
     );

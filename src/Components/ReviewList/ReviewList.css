@@ -1,0 +1,110 @@
+.reviews-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 4rem 2rem 50px;
+  box-sizing: border-box;
+}
+
+.reviews-section h2 {
+  padding-top: 32px;
+  font-size: 4rem;
+  margin-bottom: 2.5rem;
+  color: #92f4a1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+  transition: all 0.3s ease-in-out;
+}
+
+.reviews-container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1500px;
+  width: 100%;
+}
+
+.review-card {
+  background-color: #ffffff;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  text-align: left;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+  background-color: #3baa6c;
+}
+
+.review-rating {
+  color: #fbbf24; /* golden stars */
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.review-comment {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.review-name {
+  font-weight: bold;
+  color: #222;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.review-card:hover .review-comment,
+.review-card:hover .review-name,
+.review-card:hover .review-rating {
+  color: #ffffff;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .review-card {
+    padding: 2rem 1rem;
+  }
+
+  .review-comment {
+    font-size: 1rem;
+  }
+
+  .review-name {
+    font-size: 1rem;
+  }
+
+  .review-rating {
+    font-size: 1.2rem;
+  }
+}

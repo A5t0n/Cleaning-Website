@@ -17,6 +17,7 @@
     "@mui/material": "^7.1.0",
     "bootstrap": "^5.3.5",
     "leaflet": "^1.9.4",
+    "mdb-react-ui-kit": "^9.0.0",
     "mdb-ui-kit": "^9.1.0",
     "react": "^19.0.0-rc.1",
     "react-dom": "^19.0.0-rc.1",
