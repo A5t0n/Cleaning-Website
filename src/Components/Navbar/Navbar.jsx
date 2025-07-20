@@ -1,32 +1,28 @@
-import React, {useState} from 'react'
-import './Navbar.css'
-import Logo from '../../assets/logo.png'
+import React, { useState } from 'react';
+import './Navbar.css';
+import Logo from '../../assets/logo.png';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import { Link } from 'react-router-dom';
-
-
+import { NavLink } from 'react-router-dom'; // Changed from Link
 
 function Navbar() {
-
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
-
   const closeMenu = () => setMenuOpen(false);
 
   return (
-      <nav className="navbar">
+    <nav className="navbar">
       <div className="logo-container">
         <img className="logo" src={Logo} alt="Logo" />
       </div>
 
       <div className="nav-links">
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/services">Services</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li><NavLink exact="true" to="/" className="nav-link">Home</NavLink></li>
+          <li><NavLink to="/about" className="nav-link">About</NavLink></li>
+          <li><NavLink to="/services" className="nav-link">Services</NavLink></li>
+          <li><NavLink to="/contact" className="nav-link">Contact</NavLink></li>
         </ul>
       </div>
 
@@ -35,19 +31,18 @@ function Navbar() {
           <CloseIcon className="close-icon" onClick={closeMenu} />
         </div>
         <ul>
-          <li><Link to="/" onClick={closeMenu}>Home</Link></li>
-          <li><Link to="/about" onClick={closeMenu}>About</Link></li>
-          <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
-          <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
+          <li><NavLink exact="true" to="/" className="nav-link" onClick={closeMenu}>Home</NavLink></li>
+          <li><NavLink to="/about" className="nav-link" onClick={closeMenu}>About</NavLink></li>
+          <li><NavLink to="/services" className="nav-link" onClick={closeMenu}>Services</NavLink></li>
+          <li><NavLink to="/contact" className="nav-link" onClick={closeMenu}>Contact</NavLink></li>
         </ul>
       </div>
-      {/* <button className="cta-button">Get a Quote</button> */}
 
       <div className="hamburger" onClick={toggleMenu}>
         <MenuIcon style={{ fontSize: 30, color: '#139A43' }} />
       </div>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

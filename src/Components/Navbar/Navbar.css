@@ -48,7 +48,7 @@
   text-decoration: none;
   font-weight: 600;
   font-size: 20px;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, font-size 0.3s ease, border 0.3s ease;
 }
 
 .nav-links ul li a:hover {
@@ -57,6 +57,14 @@
 
 .nav-links ul li:hover {
   transform: scale(1.1);
+}
+
+/* ACTIVE LINK STYLES (for both desktop and mobile) */
+.nav-links ul li .active,
+.side-drawer ul li .active {
+  color: rgb(55, 55, 244);
+  font-weight: 700;
+  font-size: 24px;
 }
 
 /* HAMBURGER - VISIBLE ONLY ON MOBILE */
@@ -73,13 +81,13 @@
   height: 100%;
   width: 250px;
   background-color: #fff;
-  box-shadow: -2px 0 12px rgba(0, 0, 0, 0.2); /* Left-facing shadow */
+  box-shadow: -2px 0 12px rgba(0, 0, 0, 0.2);
   transition: right 0.3s ease;
   z-index: 999;
 }
 
 .side-drawer.open {
-  right: 0; /* Slide in from right */
+  right: 0;
 }
 
 .side-drawer ul {
@@ -95,6 +103,7 @@
   text-decoration: none;
   font-weight: 600;
   font-size: 20px;
+  transition: color 0.3s ease, font-size 0.3s ease, border 0.3s ease;
 }
 
 .side-drawer ul li a:hover {
@@ -103,12 +112,11 @@
 
 /* MOBILE STYLES */
 @media (max-width: 768px) {
-
-  .navbar{
+  .navbar {
     padding: 0%;
   }
 
-  .logo{
+  .logo {
     height: 100%;
   }
 
