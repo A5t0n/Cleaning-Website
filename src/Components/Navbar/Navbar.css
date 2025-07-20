@@ -69,7 +69,7 @@
 .side-drawer {
   position: fixed;
   top: 0;
-  right: -250px; /* Initially hidden on the right */
+  right: -250px; 
   height: 100%;
   width: 250px;
   background-color: #fff;
